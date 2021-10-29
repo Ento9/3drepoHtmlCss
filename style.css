@@ -538,3 +538,55 @@ body {
             animation-timing-function: ease-in;
   }
 }
+
+@import url('https://fontgoogleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #060c21;
+  z-index: 999;
+  font-size: 15px;
+}
+
+.box:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+  filter: blur(40px);
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+.box:before,
+.box:after {
+  background: linear-gradient(235deg,#36007B,#060c21,#FD2962);
+}
+
+
